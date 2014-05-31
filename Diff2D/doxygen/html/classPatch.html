@@ -18,6 +18,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -41,6 +42,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&nbsp;List</span></a></li>
       <li><a href="classes.html"><span>Class&nbsp;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&nbsp;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -63,8 +65,8 @@ Collaboration diagram for Patch:</div>
 <p><a href="classPatch-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae700af2d8c407e31f4ccd3e023f4f50a"></a><!-- doxytag: member="Patch::Patch" ref="ae700af2d8c407e31f4ccd3e023f4f50a" args="(Patch_Group_s group, std::string name, int normal, multivec&lt; 2, size_t &gt; indices, std::vector&lt; array&lt; real, 1 &gt; &gt; x, std::vector&lt; array&lt; size_t, 1 &gt; &gt; nx, v_bou_type v_bou)" -->
-&nbsp;</td><td class="memItemRight" valign="bottom"><b>Patch</b> (Patch_Group_s group, std::string name, int normal, multivec&lt; 2, size_t &gt; indices, std::vector&lt; array&lt; real, 1 &gt; &gt; x, std::vector&lt; array&lt; size_t, 1 &gt; &gt; nx, v_bou_type v_bou)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74d349d49bdf800d6f7d6c31c7f39eb3"></a><!-- doxytag: member="Patch::Patch" ref="a74d349d49bdf800d6f7d6c31c7f39eb3" args="(Patch_Group_s group, std::string name, int normal, multivec&lt; 2, size_t &gt; indices, std::vector&lt; array&lt; real, 1 &gt; &gt; x, std::vector&lt; array&lt; size_t, 1 &gt; &gt; nx, patch_v_bou_type v_bou)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>Patch</b> (Patch_Group_s group, std::string name, int normal, multivec&lt; 2, size_t &gt; indices, std::vector&lt; array&lt; real, 1 &gt; &gt; x, std::vector&lt; array&lt; size_t, 1 &gt; &gt; nx, patch_v_bou_type v_bou)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8352cc930b37975da9627262540cebd"></a><!-- doxytag: member="Patch::create_equ" ref="ac8352cc930b37975da9627262540cebd" args="(std::string name, real v0, std::vector&lt; array&lt; real, 1 &gt; &gt; v_bou, real k, real al)" -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>create_equ</b> (std::string name, real v0, std::vector&lt; array&lt; real, 1 &gt; &gt; v_bou, real k, real al)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0311eccfd4f4fd356785f7b23dc8fa2"></a><!-- doxytag: member="Patch::set_v_bou" ref="af0311eccfd4f4fd356785f7b23dc8fa2" args="(std::string equ_name, std::vector&lt; array&lt; real, 1 &gt; &gt; v_bou)" -->
@@ -86,8 +88,8 @@ int&nbsp;</td><td class="memItemRight" valign="bottom"><b>normal_</b></td></tr>
 coor_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>coor_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa69a7e422610ce91ad4fb60c88cadbf0"></a><!-- doxytag: member="Patch::nx_" ref="aa69a7e422610ce91ad4fb60c88cadbf0" args="" -->
 cell_count_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>nx_</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10f2316309ff37fb1238153527eeab48"></a><!-- doxytag: member="Patch::v_bou_" ref="a10f2316309ff37fb1238153527eeab48" args="" -->
-v_bou_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>v_bou_</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea44744ce3a7d51831f67014bc89867d"></a><!-- doxytag: member="Patch::v_bou_" ref="aea44744ce3a7d51831f67014bc89867d" args="" -->
+patch_v_bou_type&nbsp;</td><td class="memItemRight" valign="bottom"><b>v_bou_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af272c0110d640ddd191492fc9cc62990"></a><!-- doxytag: member="Patch::indices_" ref="af272c0110d640ddd191492fc9cc62990" args="" -->
 multivec&lt; 2, size_t &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>indices_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa96294c5c204449ca53209b040ae06c"></a><!-- doxytag: member="Patch::npatch_" ref="aaa96294c5c204449ca53209b040ae06c" args="" -->
@@ -105,7 +107,7 @@ array&lt; Face_s, 2 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>f
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,7 +116,7 @@ array&lt; Face_s, 2 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>f
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 28 May 2014 for Diff2D by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 29 May 2014 for Diff2D by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

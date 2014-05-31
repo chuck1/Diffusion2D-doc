@@ -18,6 +18,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -41,6 +42,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&nbsp;List</span></a></li>
       <li><a href="classes.html"><span>Class&nbsp;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&nbsp;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -73,8 +75,8 @@ Collaboration diagram for Face:</div>
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66d5955aa6386be0fd482a5ac1174229"></a><!-- doxytag: member="Face::Face" ref="a66d5955aa6386be0fd482a5ac1174229" args="(Patch_s patch, int normal, array&lt; real, 2 &gt; const &amp;ext, real pos_z, array&lt; size_t, 1 &gt; n)" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>Face</b> (Patch_s patch, int normal, array&lt; real, 2 &gt; const &amp;ext, real pos_z, array&lt; size_t, 1 &gt; n)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23e698d2341c3634212729c78bba154f"></a><!-- doxytag: member="Face::create_equ" ref="a23e698d2341c3634212729c78bba154f" args="(std::string name, Equation_Prob_s equ_prob)" -->
-void&nbsp;</td><td class="memItemRight" valign="bottom"><b>create_equ</b> (std::string name, Equation_Prob_s equ_prob)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e444cef6d1f3fb3b7d64a4799f59eb9"></a><!-- doxytag: member="Face::create_equ" ref="a5e444cef6d1f3fb3b7d64a4799f59eb9" args="(std::string name, Equation_Prob_s equ_prob)" -->
+Equation_s&nbsp;</td><td class="memItemRight" valign="bottom"><b>create_equ</b> (std::string name, Equation_Prob_s equ_prob)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ebc4163752a05d82e184a3a4c8671b3"></a><!-- doxytag: member="Face::get_loc_pos_par_index" ref="a7ebc4163752a05d82e184a3a4c8671b3" args="(Face_s nbr)" -->
 int&nbsp;</td><td class="memItemRight" valign="bottom"><b>get_loc_pos_par_index</b> (Face_s nbr)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed5980668f26bc29338dfa11b32919f5"></a><!-- doxytag: member="Face::x" ref="aed5980668f26bc29338dfa11b32919f5" args="(int i)" -->
@@ -114,6 +116,9 @@ grid_tup&nbsp;</td><td class="memItemRight" valign="bottom"><b>grid</b> (std::st
 Patch_s&nbsp;</td><td class="memItemRight" valign="bottom"><b>patch_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0922668c4175d0274024a5869b310a63"></a><!-- doxytag: member="Face::ext_" ref="a0922668c4175d0274024a5869b310a63" args="" -->
 array&lt; real, 2 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>ext_</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac831a8581fa641c54f4adb6e6b3dfe71"></a><!-- doxytag: member="Face::conns_" ref="ac831a8581fa641c54f4adb6e6b3dfe71" args="" -->
+std::vector&lt; std::vector<br class="typebreak"/>
+&lt; Conn_s &gt; &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>conns_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a639f6d684b3a55d69528b5b6f5976937"></a><!-- doxytag: member="Face::pos_z_" ref="a639f6d684b3a55d69528b5b6f5976937" args="" -->
 real&nbsp;</td><td class="memItemRight" valign="bottom"><b>pos_z_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af798b428f231a2f7fad13a386a5c4d7f"></a><!-- doxytag: member="Face::n_" ref="af798b428f231a2f7fad13a386a5c4d7f" args="" -->
@@ -124,12 +129,6 @@ array&lt; real, 3 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>d_<
 array&lt; real, 1 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>l_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46b37a1eaba00ad44cf46b6da1391b30"></a><!-- doxytag: member="Face::equs_" ref="a46b37a1eaba00ad44cf46b6da1391b30" args="" -->
 std::map&lt; std::string, Equation_s &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>equs_</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac831a8581fa641c54f4adb6e6b3dfe71"></a><!-- doxytag: member="Face::conns_" ref="ac831a8581fa641c54f4adb6e6b3dfe71" args="" -->
-std::vector&lt; std::vector<br class="typebreak"/>
-&lt; Conn_s &gt; &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>conns_</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a982045b07b690ea86fc8faa77a1cc534"></a><!-- doxytag: member="Face::v_bou_" ref="a982045b07b690ea86fc8faa77a1cc534" args="" -->
-std::map&lt; std::string, array<br class="typebreak"/>
-&lt; real, 1 &gt;[2][2]&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>v_bou_</b></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Face </p>
@@ -143,7 +142,7 @@ std::map&lt; std::string, array<br class="typebreak"/>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -152,7 +151,7 @@ std::map&lt; std::string, array<br class="typebreak"/>
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 28 May 2014 for Diff2D by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 29 May 2014 for Diff2D by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

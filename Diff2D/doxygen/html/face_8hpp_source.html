@@ -18,6 +18,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -85,7 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00045"></a>00045         <span class="keyword">public</span>:
 <a name="l00046"></a>00046                 <a class="code" href="classFace.html" title="Face">Face</a>(Patch_s patch, <span class="keywordtype">int</span> normal, array&lt;real,2&gt; <span class="keyword">const</span> &amp; ext, real pos_z, array&lt;size_t,1&gt; n);
 <a name="l00047"></a>00047 
-<a name="l00048"></a>00048                 <span class="keywordtype">void</span>                    create_equ(std::string name, Equation_Prob_s equ_prob);
+<a name="l00048"></a>00048                 Equation_s              create_equ(std::string name, Equation_Prob_s equ_prob);
 <a name="l00049"></a>00049                 <span class="keywordtype">int</span>                     get_loc_pos_par_index(Face_s nbr);
 <a name="l00050"></a>00050 
 <a name="l00051"></a>00051                 real                    x(<span class="keywordtype">int</span> i);
@@ -114,25 +115,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00074"></a>00074 
 <a name="l00075"></a>00075                 Patch_s                                         patch_;
 <a name="l00076"></a>00076                 array&lt;real,2&gt;                                   ext_;
-<a name="l00077"></a>00077                 real                                            pos_z_;
-<a name="l00078"></a>00078                 array&lt;size_t,1&gt;                                 n_;
-<a name="l00079"></a>00079                 array&lt;real,3&gt;                                   d_;
-<a name="l00080"></a>00080                 array&lt;real,1&gt;                                   l_;
-<a name="l00081"></a>00081                 std::map&lt; std::string, Equation_s &gt;             equs_;
-<a name="l00082"></a>00082                 std::vector&lt; std::vector&lt;Conn_s&gt; &gt;              conns_;
-<a name="l00083"></a>00083                 std::map&lt;std::string, array&lt;real,1&gt;[2][2]&gt;      v_bou_;
-<a name="l00084"></a>00084 };
-<a name="l00085"></a>00085 
+<a name="l00077"></a>00077 std::vector&lt; std::vector&lt;Conn_s&gt; &gt;              conns_;
+<a name="l00078"></a>00078                 real                                            pos_z_;
+<a name="l00079"></a>00079                 array&lt;size_t,1&gt;                                 n_;
+<a name="l00080"></a>00080                 array&lt;real,3&gt;                                   d_;
+<a name="l00081"></a>00081                 array&lt;real,1&gt;                                   l_;
+<a name="l00082"></a>00082                 std::map&lt; std::string, Equation_s &gt;             equs_;
+<a name="l00083"></a>00083                 
+<a name="l00084"></a>00084                 <span class="comment">//std::map&lt;std::string, array&lt;real,1&gt;[2][2]&gt;    v_bou_;</span>
+<a name="l00085"></a>00085 };
 <a name="l00086"></a>00086 
 <a name="l00087"></a>00087 
-<a name="l00088"></a>00088 <span class="preprocessor">#endif</span>
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089 <span class="preprocessor">#endif</span>
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -141,7 +143,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 28 May 2014 for Diff2D by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 29 May 2014 for Diff2D by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

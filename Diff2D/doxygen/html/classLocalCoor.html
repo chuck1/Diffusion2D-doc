@@ -18,6 +18,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -41,6 +42,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&nbsp;List</span></a></li>
       <li><a href="classes.html"><span>Class&nbsp;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&nbsp;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -70,12 +72,12 @@ int&nbsp;</td><td class="memItemRight" valign="bottom"><b>glo_to_loc</b> (int G)
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5da8e4b3f6c32fbf6636aaa47e04adc"></a><!-- doxytag: member="LocalCoor::loc_to_glo" ref="ab5da8e4b3f6c32fbf6636aaa47e04adc" args="(int L)" -->
 int&nbsp;</td><td class="memItemRight" valign="bottom"><b>loc_to_glo</b> (int L)</td></tr>
 <tr><td colspan="2"><h2>Public Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd97c2eb7e3b994dbc58ae98ab785280"></a><!-- doxytag: member="LocalCoor::Z_" ref="acd97c2eb7e3b994dbc58ae98ab785280" args="" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><b>Z_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d72e3489aaf1b6579f7a3e0f5b30e26"></a><!-- doxytag: member="LocalCoor::X_" ref="a7d72e3489aaf1b6579f7a3e0f5b30e26" args="" -->
 int&nbsp;</td><td class="memItemRight" valign="bottom"><b>X_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ff6668d5d6898582ddfdc5eadce58ff"></a><!-- doxytag: member="LocalCoor::Y_" ref="a5ff6668d5d6898582ddfdc5eadce58ff" args="" -->
 int&nbsp;</td><td class="memItemRight" valign="bottom"><b>Y_</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd97c2eb7e3b994dbc58ae98ab785280"></a><!-- doxytag: member="LocalCoor::Z_" ref="acd97c2eb7e3b994dbc58ae98ab785280" args="" -->
-int&nbsp;</td><td class="memItemRight" valign="bottom"><b>Z_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c0e974fc45c597f893b20a0c2f6869c"></a><!-- doxytag: member="LocalCoor::x_" ref="a2c0e974fc45c597f893b20a0c2f6869c" args="" -->
 <a class="el" href="structIS.html">IS</a>&nbsp;</td><td class="memItemRight" valign="bottom"><b>x_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58678d9cfb17db349a9d7fd70a2d5150"></a><!-- doxytag: member="LocalCoor::y_" ref="a58678d9cfb17db349a9d7fd70a2d5150" args="" -->
@@ -83,8 +85,9 @@ int&nbsp;</td><td class="memItemRight" valign="bottom"><b>Z_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdd6d24c450a43fd755f2e43d16d9991"></a><!-- doxytag: member="LocalCoor::z_" ref="acdd6d24c450a43fd755f2e43d16d9991" args="" -->
 <a class="el" href="structIS.html">IS</a>&nbsp;</td><td class="memItemRight" valign="bottom"><b>z_</b></td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/include/Diff2D/<a class="el" href="unit__vec_8hpp_source.html">unit_vec.hpp</a></li>
+<li>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/src/Diff2D/LocalCoor.cpp</li>
 </ul>
 </div>
 <!--- window showing the filter options -->
@@ -92,7 +95,7 @@ int&nbsp;</td><td class="memItemRight" valign="bottom"><b>Z_</b></td></tr>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,7 +104,7 @@ int&nbsp;</td><td class="memItemRight" valign="bottom"><b>Z_</b></td></tr>
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 28 May 2014 for Diff2D by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 29 May 2014 for Diff2D by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

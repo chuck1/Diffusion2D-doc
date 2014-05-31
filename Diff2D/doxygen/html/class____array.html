@@ -18,6 +18,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -41,6 +42,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&nbsp;List</span></a></li>
       <li><a href="classes.html"><span>Class&nbsp;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&nbsp;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -63,6 +65,12 @@ typedef <a class="el" href="structInitializer__list.html">Initializer_list</a>&l
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3443fee161fd3f8ccb1290980a4190d"></a><!-- doxytag: member="__array::__array" ref="ac3443fee161fd3f8ccb1290980a4190d" args="(__array&lt; T, N &gt; const &amp;rhs)" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>__array</b> (<a class="el" href="class____array.html">__array</a>&lt; T, N &gt; const &amp;rhs)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a852355254391a277489da13f24368e5d"></a><!-- doxytag: member="__array::__array" ref="a852355254391a277489da13f24368e5d" args="(__array&lt; T, N &gt; &amp;&amp;rhs)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class____array.html#a852355254391a277489da13f24368e5d">__array</a> (<a class="el" href="class____array.html">__array</a>&lt; T, N &gt; &amp;&amp;rhs)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">move constructor <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ff453aafc86af9a4dbe89968b733fff"></a><!-- doxytag: member="__array::operator=" ref="a0ff453aafc86af9a4dbe89968b733fff" args="(__array&lt; T, N &gt; &amp;&amp;rhs)" -->
+<a class="el" href="class____array.html">__array</a>&lt; T, N &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class____array.html#a0ff453aafc86af9a4dbe89968b733fff">operator=</a> (<a class="el" href="class____array.html">__array</a>&lt; T, N &gt; &amp;&amp;rhs)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">move assignment <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1072f5c538102121515000a4ef521303"></a><!-- doxytag: member="__array::zeros" ref="a1072f5c538102121515000a4ef521303" args="()" -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>zeros</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1fd7d5c46fb341f54cab916b78be561"></a><!-- doxytag: member="__array::ones" ref="ad1fd7d5c46fb341f54cab916b78be561" args="()" -->
@@ -75,10 +83,16 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>set</b> (std::vector&
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>__set</b> (T *dst, std::initializer_list&lt; T &gt; src)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a272fe82c6f31832970e123ac4ca66b08"></a><!-- doxytag: member="__array::set" ref="a272fe82c6f31832970e123ac4ca66b08" args="(std::vector&lt; int &gt; i, T *src, int len)" -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>set</b> (std::vector&lt; int &gt; i, T *src, int len)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e014a0a3f33a9d1a11823971ed90b1a"></a><!-- doxytag: member="__array::transpose" ref="a5e014a0a3f33a9d1a11823971ed90b1a" args="()" -->
+shared&nbsp;</td><td class="memItemRight" valign="bottom"><b>transpose</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1c5c3051c03e39b9715903ee0fb202d"></a><!-- doxytag: member="__array::transpose_self" ref="ac1c5c3051c03e39b9715903ee0fb202d" args="()" -->
 shared&nbsp;</td><td class="memItemRight" valign="bottom"><b>transpose_self</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f4e2417c5e5c8beec1ac35d0a145ac9"></a><!-- doxytag: member="__array::rot90" ref="a7f4e2417c5e5c8beec1ac35d0a145ac9" args="(int i)" -->
+shared&nbsp;</td><td class="memItemRight" valign="bottom"><b>rot90</b> (int i)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f127aa40d72c1087c538619e5cd6ef9"></a><!-- doxytag: member="__array::rot90_self" ref="a0f127aa40d72c1087c538619e5cd6ef9" args="(int i)" -->
 shared&nbsp;</td><td class="memItemRight" valign="bottom"><b>rot90_self</b> (int i)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66e5055d7c2958ffd23a9392604af8f8"></a><!-- doxytag: member="__array::fliplr" ref="a66e5055d7c2958ffd23a9392604af8f8" args="()" -->
+shared&nbsp;</td><td class="memItemRight" valign="bottom"><b>fliplr</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9de6105d23a33b20a4b0cc02b923edb4"></a><!-- doxytag: member="__array::fliplr_self" ref="a9de6105d23a33b20a4b0cc02b923edb4" args="()" -->
 shared&nbsp;</td><td class="memItemRight" valign="bottom"><b>fliplr_self</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07f72930f0260b81df31b991f4c7e97d"></a><!-- doxytag: member="__array::ravel" ref="a07f72930f0260b81df31b991f4c7e97d" args="()" -->
@@ -105,25 +119,28 @@ T &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (in
 T &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><b>get</b> (int i[N])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a048dc1381c0a2e3b8b07d487b6e429b1"></a><!-- doxytag: member="__array::__get" ref="a048dc1381c0a2e3b8b07d487b6e429b1" args="(T *t, int *c, int *i, int *i_last)" -->
 T *&nbsp;</td><td class="memItemRight" valign="bottom"><b>__get</b> (T *t, int *c, int *i, int *i_last)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7d5ddda5112a815aef1b8ac55fb3d87"></a><!-- doxytag: member="__array::get" ref="ac7d5ddda5112a815aef1b8ac55fb3d87" args="(std::vector&lt; int &gt; i)" -->
-T &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><b>get</b> (std::vector&lt; int &gt; i)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6417fe5f1aa72b28ad1fb5b10a0fb9ad"></a><!-- doxytag: member="__array::get" ref="a6417fe5f1aa72b28ad1fb5b10a0fb9ad" args="(std::vector&lt; size_t &gt; i)" -->
-T &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><b>get</b> (std::vector&lt; size_t &gt; i)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c097ee9f07cfd581c8d16089a4a6563"></a><!-- doxytag: member="__array::__get1" ref="a4c097ee9f07cfd581c8d16089a4a6563" args="(T *t, std::vector&lt; size_t &gt; c, std::vector&lt; size_t &gt; i)" -->
-T *&nbsp;</td><td class="memItemRight" valign="bottom"><b>__get1</b> (T *t, std::vector&lt; size_t &gt; c, std::vector&lt; size_t &gt; i)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a499808e1977bdb4e3dcb562eb70d67da"></a><!-- doxytag: member="__array::copy" ref="a499808e1977bdb4e3dcb562eb70d67da" args="(T *src, T *dst, std::vector&lt; size_t &gt; vec_i_src_b, std::vector&lt; size_t &gt; vec_i_src_e, std::vector&lt; size_t &gt; vec_i_dst_b, std::vector&lt; size_t &gt; vec_i_dst_e, std::vector&lt; size_t &gt; vec_c_src, std::vector&lt; size_t &gt; vec_c_dst)" -->
-void&nbsp;</td><td class="memItemRight" valign="bottom"><b>copy</b> (T *src, T *dst, std::vector&lt; size_t &gt; vec_i_src_b, std::vector&lt; size_t &gt; vec_i_src_e, std::vector&lt; size_t &gt; vec_i_dst_b, std::vector&lt; size_t &gt; vec_i_dst_e, std::vector&lt; size_t &gt; vec_c_src, std::vector&lt; size_t &gt; vec_c_dst)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf10d5d8b18d000b9ebd34a396d17260"></a><!-- doxytag: member="__array::get" ref="aaf10d5d8b18d000b9ebd34a396d17260" args="(std::vector&lt; int &gt; const &amp;i)" -->
+T &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class____array.html#aaf10d5d8b18d000b9ebd34a396d17260">get</a> (std::vector&lt; int &gt; const &amp;i)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">get std::vector <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0eeacc10311382468b2fe0b0e4ce8e81"></a><!-- doxytag: member="__array::get" ref="a0eeacc10311382468b2fe0b0e4ce8e81" args="(std::vector&lt; size_t &gt; const &amp;i)" -->
+T &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class____array.html#a0eeacc10311382468b2fe0b0e4ce8e81">get</a> (std::vector&lt; size_t &gt; const &amp;i)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">get std::vector <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a559247c4fcb56d589168d13703597b40"></a><!-- doxytag: member="__array::__get1" ref="a559247c4fcb56d589168d13703597b40" args="(T *t, std::vector&lt; size_t &gt;::const_iterator c, std::vector&lt; size_t &gt;::const_iterator n, std::vector&lt; size_t &gt;::const_iterator it, std::vector&lt; size_t &gt; const &amp;i)" -->
+T *&nbsp;</td><td class="memItemRight" valign="bottom"><b>__get1</b> (T *t, std::vector&lt; size_t &gt;::const_iterator c, std::vector&lt; size_t &gt;::const_iterator n, std::vector&lt; size_t &gt;::const_iterator it, std::vector&lt; size_t &gt; const &amp;i)</td></tr>
 <tr><td class="memTemplParams" colspan="2"><a class="anchor" id="a7fb64a0fa23884f3178a913ab3a09f58"></a><!-- doxytag: member="__array::get" ref="a7fb64a0fa23884f3178a913ab3a09f58" args="(I...b)" -->
 template&lt;typename... I&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">T &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (I...b)</td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="a8da2e8a8bd0f3edc94deb82640e9ca02"></a><!-- doxytag: member="__array::__get" ref="a8da2e8a8bd0f3edc94deb82640e9ca02" args="(T *t, std::vector&lt; size_t &gt; c, I...b)" -->
+<tr><td class="memTemplItemLeft" align="right" valign="top">T &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class____array.html#a7fb64a0fa23884f3178a913ab3a09f58">get</a> (I...b)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">get variadic input <br/></td></tr>
+<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="ab0af5463ffa3d721d81e3938d7a5c3ed"></a><!-- doxytag: member="__array::__get" ref="ab0af5463ffa3d721d81e3938d7a5c3ed" args="(T *t, std::vector&lt; size_t &gt;::const_iterator c, std::vector&lt; size_t &gt;::const_iterator n, I...b)" -->
 template&lt;typename... I&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">T *&nbsp;</td><td class="memTemplItemRight" valign="bottom"><b>__get</b> (T *t, std::vector&lt; size_t &gt; c, I...b)</td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="ad0c867ee0e34df488ee66f8e889b942a"></a><!-- doxytag: member="__array::__get" ref="ad0c867ee0e34df488ee66f8e889b942a" args="(T *t, std::vector&lt; size_t &gt; c, A a, B...b)" -->
+<tr><td class="memTemplItemLeft" align="right" valign="top">T *&nbsp;</td><td class="memTemplItemRight" valign="bottom"><b>__get</b> (T *t, std::vector&lt; size_t &gt;::const_iterator c, std::vector&lt; size_t &gt;::const_iterator n, I...b)</td></tr>
+<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="aeffcb69960a45effe25b65fa54403d19"></a><!-- doxytag: member="__array::__get" ref="aeffcb69960a45effe25b65fa54403d19" args="(T *t, std::vector&lt; size_t &gt;::const_iterator c, std::vector&lt; size_t &gt;::const_iterator n, A a, B...b)" -->
 template&lt;typename A , typename... B&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">T *&nbsp;</td><td class="memTemplItemRight" valign="bottom"><b>__get</b> (T *t, std::vector&lt; size_t &gt; c, A a, B...b)</td></tr>
-<tr><td colspan="2"><div class="groupHeader">self arithmetic @{</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpee29a0132b6b71a7962958404c3728ec"></a> </p>
+<tr><td class="memTemplItemLeft" align="right" valign="top">T *&nbsp;</td><td class="memTemplItemRight" valign="bottom"><b>__get</b> (T *t, std::vector&lt; size_t &gt;::const_iterator c, std::vector&lt; size_t &gt;::const_iterator n, A a, B...b)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64d5066190f4f4016e60ac4acf836ed2"></a><!-- doxytag: member="__array::copy" ref="a64d5066190f4f4016e60ac4acf836ed2" args="(T *src, T *dst, T *const &amp;src0, T *const &amp;dst0, std::vector&lt; size_t &gt;::const_iterator i_src_b, std::vector&lt; size_t &gt;::const_iterator i_src_e, std::vector&lt; size_t &gt;::const_iterator i_dst_b, std::vector&lt; size_t &gt;::const_iterator i_dst_e, std::vector&lt; size_t &gt;::const_iterator c_src, std::vector&lt; size_t &gt;::const_iterator c_dst, std::vector&lt; size_t &gt; const &amp;vec_i_src_b)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>copy</b> (T *src, T *dst, T *const &amp;src0, T *const &amp;dst0, std::vector&lt; size_t &gt;::const_iterator i_src_b, std::vector&lt; size_t &gt;::const_iterator i_src_e, std::vector&lt; size_t &gt;::const_iterator i_dst_b, std::vector&lt; size_t &gt;::const_iterator i_dst_e, std::vector&lt; size_t &gt;::const_iterator c_src, std::vector&lt; size_t &gt;::const_iterator c_dst, std::vector&lt; size_t &gt; const &amp;vec_i_src_b)</td></tr>
+<tr><td colspan="2"><div class="groupHeader">self arithmetic</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp44a004ce72e494ebc4afe892ebb473f0"></a> </p>
 <br/><br/></div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fdacdb2b2a79effe9a11121648a3f44"></a><!-- doxytag: member="__array::operator+=" ref="a1fdacdb2b2a79effe9a11121648a3f44" args="(__array&lt; T, N &gt; const &amp;rhs)" -->
 <a class="el" href="class____array.html">__array</a>&lt; T, N &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (<a class="el" href="class____array.html">__array</a>&lt; T, N &gt; const &amp;rhs)</td></tr>
@@ -185,11 +202,13 @@ T&nbsp;</td><td class="memItemRight" valign="bottom"><b>max</b> ()</td></tr>
 <br/><br/></div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5755f3be1a48c4c62a12adc512dac16"></a><!-- doxytag: member="__array::offset2index" ref="ab5755f3be1a48c4c62a12adc512dac16" args="(int o)" -->
 std::vector&lt; int &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>offset2index</b> (int o)</td></tr>
-<tr><td colspan="2"><div class="groupHeader">lin alg</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpfa79411a4ff41c0c4ca3776577c7bf42"></a> </p>
+<tr><td colspan="2"><div class="groupHeader">linear algebra</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpdbb97692ebc717958fffd4987443ddaf"></a> </p>
 <br/><br/></div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f07f0f2bfe9a0da0aa3744b0d48d390"></a><!-- doxytag: member="__array::gradient" ref="a0f07f0f2bfe9a0da0aa3744b0d48d390" args="(array&lt; T, N+1 &gt; d)" -->
 std::shared_ptr&lt; <a class="el" href="class____array.html">__array</a>&lt; T, N+1 &gt; &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>gradient</b> (array&lt; T, N+1 &gt; d)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa549bf171a0c581f65925c7eae47ffb2"></a><!-- doxytag: member="__array::fda_1_back" ref="aa549bf171a0c581f65925c7eae47ffb2" args="(int i1, T h)" -->
+T&nbsp;</td><td class="memItemRight" valign="bottom"><b>fda_1_back</b> (int i1, T h)</td></tr>
 <tr><td colspan="2"><div class="groupHeader">iterating</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpc920236de44765917757f8b46bb8ccda"></a> </p>
 <br/><br/></div></td></tr>
@@ -228,7 +247,7 @@ T *&nbsp;</td><td class="memItemRight" valign="bottom"><b>v_</b></td></tr>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -237,7 +256,7 @@ T *&nbsp;</td><td class="memItemRight" valign="bottom"><b>v_</b></td></tr>
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 28 May 2014 for Diff2D by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 29 May 2014 for Diff2D by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

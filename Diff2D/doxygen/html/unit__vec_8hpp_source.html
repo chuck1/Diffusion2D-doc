@@ -18,6 +18,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -78,54 +79,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00035"></a>00035         <span class="keyword">public</span>:
 <a name="l00036"></a>00036                 <span class="comment">//# store as [[-1, 1],[-2, 2],[-3, 3]]</span>
 <a name="l00037"></a>00037 
-<a name="l00038"></a>00038                 <a class="code" href="classLocalCoor.html">LocalCoor</a>(<span class="keywordtype">int</span> Z) {
-<a name="l00039"></a>00039                         Z_ = Z;
-<a name="l00040"></a>00040                         X_ = nxt(Z_);
-<a name="l00041"></a>00041                         Y_ = nxt(X_);
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043                         x_ = <a class="code" href="structIS.html">IS</a>(X_);
-<a name="l00044"></a>00044                         y_ = <a class="code" href="structIS.html">IS</a>(Y_);
-<a name="l00045"></a>00045                         z_ = <a class="code" href="structIS.html">IS</a>(Z_);
-<a name="l00046"></a>00046                 }
-<a name="l00047"></a>00047                 <span class="keywordtype">int</span>             glo_to_loc(<span class="keywordtype">int</span> G) {
-<a name="l00048"></a>00048                         <span class="keywordtype">int</span> sg = sign(G);
-<a name="l00049"></a>00049                         <span class="keywordtype">int</span> sz = sign(Z_);
-<a name="l00050"></a>00050 
-<a name="l00051"></a>00051                         <span class="keywordtype">int</span> d = nxt_dist(abs(Z_), abs(G));
+<a name="l00038"></a>00038                 <a class="code" href="classLocalCoor.html">LocalCoor</a>(<span class="keywordtype">int</span> Z);
+<a name="l00039"></a>00039                 <span class="keywordtype">int</span>             glo_to_loc(<span class="keywordtype">int</span> G);
+<a name="l00040"></a>00040                 <span class="keywordtype">int</span>             loc_to_glo(<span class="keywordtype">int</span> L);
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042                 <span class="keywordtype">int</span>     Z_;
+<a name="l00043"></a>00043                 <span class="keywordtype">int</span>     X_;
+<a name="l00044"></a>00044                 <span class="keywordtype">int</span>     Y_;
+<a name="l00045"></a>00045                 
+<a name="l00046"></a>00046                 <a class="code" href="structIS.html">IS</a>      x_;
+<a name="l00047"></a>00047                 <a class="code" href="structIS.html">IS</a>      y_;
+<a name="l00048"></a>00048                 <a class="code" href="structIS.html">IS</a>      z_;
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050 };
+<a name="l00051"></a>00051 
 <a name="l00052"></a>00052 
-<a name="l00053"></a>00053                         <span class="keywordtype">int</span> L = sg * nxt(3 * sz, d);
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055                         <span class="keywordflow">return</span> L;
-<a name="l00056"></a>00056                 }
-<a name="l00057"></a>00057                 <span class="keywordtype">int</span>             loc_to_glo(<span class="keywordtype">int</span> L) {
-<a name="l00058"></a>00058                         <span class="keywordtype">int</span> G = sign(L) * nxt(Z_, abs(L) % 3);
-<a name="l00059"></a>00059                         <span class="keywordflow">return</span> G;
-<a name="l00060"></a>00060                 }
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062                 <span class="keywordtype">int</span>     X_;
-<a name="l00063"></a>00063                 <span class="keywordtype">int</span>     Y_;
-<a name="l00064"></a>00064                 <span class="keywordtype">int</span>     Z_;
-<a name="l00065"></a>00065                 <a class="code" href="structIS.html">IS</a>      x_;
-<a name="l00066"></a>00066                 <a class="code" href="structIS.html">IS</a>      y_;
-<a name="l00067"></a>00067                 <a class="code" href="structIS.html">IS</a>      z_;
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069 };
-<a name="l00070"></a>00070 
-<a name="l00071"></a>00071 
-<a name="l00072"></a>00072 
-<a name="l00073"></a>00073 
-<a name="l00074"></a>00074 
-<a name="l00075"></a>00075 <span class="preprocessor">#endif</span>
-<a name="l00076"></a>00076 <span class="preprocessor"></span>
-<a name="l00077"></a>00077 
-<a name="l00078"></a>00078 
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="preprocessor">#endif</span>
+<a name="l00055"></a>00055 <span class="preprocessor"></span>
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -134,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 28 May 2014 for Diff2D by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 29 May 2014 for Diff2D by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

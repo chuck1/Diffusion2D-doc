@@ -18,6 +18,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -64,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00021"></a>00021                                 multivec&lt;2,size_t&gt; indices,
 <a name="l00022"></a>00022                                 std::vector&lt; array&lt;real,1&gt; &gt; x,
 <a name="l00023"></a>00023                                 std::vector&lt; array&lt;size_t,1&gt; &gt; nx,
-<a name="l00024"></a>00024                                 v_bou_type v_bou);
+<a name="l00024"></a>00024                                 patch_v_bou_type v_bou);
 <a name="l00025"></a>00025                 
 <a name="l00026"></a>00026 
 <a name="l00027"></a>00027                 <span class="keywordtype">void</span>            create_equ(std::string name, real v0, std::vector&lt; array&lt;real,1&gt; &gt; v_bou, real k, real al);
@@ -83,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00040"></a>00040                 <span class="keywordtype">int</span>                                     normal_;
 <a name="l00041"></a>00041                 coor_type                               coor_;
 <a name="l00042"></a>00042                 cell_count_type                         nx_;
-<a name="l00043"></a>00043                 v_bou_type                              v_bou_;
+<a name="l00043"></a>00043                 patch_v_bou_type                        v_bou_;
 <a name="l00044"></a>00044 
 <a name="l00045"></a>00045                 multivec&lt;2,size_t&gt;                      indices_;
 <a name="l00046"></a>00046                 
@@ -102,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,7 +112,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 28 May 2014 for Diff2D by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 29 May 2014 for Diff2D by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

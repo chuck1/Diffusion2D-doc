@@ -70,15 +70,9 @@ std::vector$<$ Face\_\-s $>$ {\bfseries faces} ()}
 \label{classProb_ac298114d98ebe5296ede77dafc3f4df3}
 
 \item 
-\hypertarget{classProb_a7224056a4b6649080d3e2deeab2faaad}{
-int {\bfseries solve} (std::string name, real cond, bool ver, real R\_\-outer)}
-\label{classProb_a7224056a4b6649080d3e2deeab2faaad}
-
-\item 
-\hypertarget{classProb_a2485482a64a7f4f3d7ef75ba3a4687b0}{
-int {\bfseries solve\_\-serial} (std::string name, real cond, bool ver, real R\_\-outer)}
-\label{classProb_a2485482a64a7f4f3d7ef75ba3a4687b0}
-
+int \hyperlink{classProb_a35e6fe7ad3c45ef3b922f5212a039887}{solve} (std::string name, real cond, bool ver, size\_\-t it\_\-outer, real R\_\-outer)
+\begin{DoxyCompactList}\small\item\em solve \item\end{DoxyCompactList}\item 
+int \hyperlink{classProb_a19a0a17f9437a24111f11f215695a33e}{solve\_\-serial} (std::string name, real cond, bool ver, size\_\-t it\_\-outer, real R\_\-outer)
 \item 
 \hypertarget{classProb_ae50c9b74ff1590305dac1e64988a6d8b}{
 int {\bfseries solve2} (std::string equ\_\-name, real cond1\_\-final, real cond2, bool ver)}
@@ -123,20 +117,42 @@ std::map$<$ std::string, Equation\_\-Prob\_\-s $>$ {\bfseries equs\_\-}}
 \label{classProb_ac78ec4ce0542942cbfdb62e2737b149e}
 
 \item 
-\hypertarget{classProb_ab683dae1ead4955162ebe4a2194f8a35}{
-int {\bfseries it\_\-max\_\-1\_\-}}
-\label{classProb_ab683dae1ead4955162ebe4a2194f8a35}
+\hypertarget{classProb_a4414250c2bd8f6aa6cfc9488c3993092}{
+size\_\-t {\bfseries it\_\-max\_\-inner\_\-}}
+\label{classProb_a4414250c2bd8f6aa6cfc9488c3993092}
 
 \item 
-\hypertarget{classProb_ac344ce6492eb0d3f8b6655aa914982d7}{
-int {\bfseries it\_\-max\_\-2\_\-}}
-\label{classProb_ac344ce6492eb0d3f8b6655aa914982d7}
+\hypertarget{classProb_aa52011388c8c265ffc71c010a4b61f8f}{
+size\_\-t {\bfseries it\_\-max\_\-outer\_\-}}
+\label{classProb_aa52011388c8c265ffc71c010a4b61f8f}
 
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Problem 
+
+\subsection{Member Function Documentation}
+\hypertarget{classProb_a35e6fe7ad3c45ef3b922f5212a039887}{
+\index{Prob@{Prob}!solve@{solve}}
+\index{solve@{solve}!Prob@{Prob}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}int Prob::solve (std::string {\em name}, \/  real {\em cond}, \/  bool {\em ver}, \/  size\_\-t {\em it\_\-outer}, \/  real {\em R\_\-outer})}}
+\label{classProb_a35e6fe7ad3c45ef3b922f5212a039887}
+
+
+solve 
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]name of variable to solve \item[{\em cond}]residual stop condition \item[{\em it\_\-outer}]current iteration of outer loop for purpose of displaying \item[{\em R\_\-outer}]current residual of outer loop for purpose of displaying \end{DoxyParams}
+\hypertarget{classProb_a19a0a17f9437a24111f11f215695a33e}{
+\index{Prob@{Prob}!solve\_\-serial@{solve\_\-serial}}
+\index{solve\_\-serial@{solve\_\-serial}!Prob@{Prob}}
+\subsubsection[{solve\_\-serial}]{\setlength{\rightskip}{0pt plus 5cm}int Prob::solve\_\-serial (std::string {\em name}, \/  real {\em cond}, \/  bool {\em ver}, \/  size\_\-t {\em it\_\-outer}, \/  real {\em R\_\-outer})}}
+\label{classProb_a19a0a17f9437a24111f11f215695a33e}
+
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000001}{Todo}]move this to class variable to avoid excess alloc! \end{Desc}
+
 
 The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 

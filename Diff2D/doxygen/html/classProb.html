@@ -18,6 +18,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -41,6 +42,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&nbsp;List</span></a></li>
       <li><a href="classes.html"><span>Class&nbsp;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&nbsp;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -81,10 +83,9 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>value_normalize</b> (
 void&nbsp;</td><td class="memItemRight" valign="bottom"><b>copy_value_to_source</b> (std::string equ_name_from, std::string equ_name_to)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac298114d98ebe5296ede77dafc3f4df3"></a><!-- doxytag: member="Prob::faces" ref="ac298114d98ebe5296ede77dafc3f4df3" args="()" -->
 std::vector&lt; Face_s &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>faces</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7224056a4b6649080d3e2deeab2faaad"></a><!-- doxytag: member="Prob::solve" ref="a7224056a4b6649080d3e2deeab2faaad" args="(std::string name, real cond, bool ver, real R_outer)" -->
-int&nbsp;</td><td class="memItemRight" valign="bottom"><b>solve</b> (std::string name, real cond, bool ver, real R_outer)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2485482a64a7f4f3d7ef75ba3a4687b0"></a><!-- doxytag: member="Prob::solve_serial" ref="a2485482a64a7f4f3d7ef75ba3a4687b0" args="(std::string name, real cond, bool ver, real R_outer)" -->
-int&nbsp;</td><td class="memItemRight" valign="bottom"><b>solve_serial</b> (std::string name, real cond, bool ver, real R_outer)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProb.html#a35e6fe7ad3c45ef3b922f5212a039887">solve</a> (std::string name, real cond, bool ver, size_t it_outer, real R_outer)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">solve  <a href="#a35e6fe7ad3c45ef3b922f5212a039887"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProb.html#a19a0a17f9437a24111f11f215695a33e">solve_serial</a> (std::string name, real cond, bool ver, size_t it_outer, real R_outer)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae50c9b74ff1590305dac1e64988a6d8b"></a><!-- doxytag: member="Prob::solve2" ref="ae50c9b74ff1590305dac1e64988a6d8b" args="(std::string equ_name, real cond1_final, real cond2, bool ver)" -->
 int&nbsp;</td><td class="memItemRight" valign="bottom"><b>solve2</b> (std::string equ_name, real cond1_final, real cond2, bool ver)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a187e846a4f4eed21758efaa63ede9ec1"></a><!-- doxytag: member="Prob::save" ref="a187e846a4f4eed21758efaa63ede9ec1" args="()" -->
@@ -103,13 +104,118 @@ std::vector&lt; array&lt; size_t, 1 &gt; &gt;&nbsp;</td><td class="memItemRight"
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac78ec4ce0542942cbfdb62e2737b149e"></a><!-- doxytag: member="Prob::equs_" ref="ac78ec4ce0542942cbfdb62e2737b149e" args="" -->
 std::map&lt; std::string, <br class="typebreak"/>
 Equation_Prob_s &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>equs_</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab683dae1ead4955162ebe4a2194f8a35"></a><!-- doxytag: member="Prob::it_max_1_" ref="ab683dae1ead4955162ebe4a2194f8a35" args="" -->
-int&nbsp;</td><td class="memItemRight" valign="bottom"><b>it_max_1_</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac344ce6492eb0d3f8b6655aa914982d7"></a><!-- doxytag: member="Prob::it_max_2_" ref="ac344ce6492eb0d3f8b6655aa914982d7" args="" -->
-int&nbsp;</td><td class="memItemRight" valign="bottom"><b>it_max_2_</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4414250c2bd8f6aa6cfc9488c3993092"></a><!-- doxytag: member="Prob::it_max_inner_" ref="a4414250c2bd8f6aa6cfc9488c3993092" args="" -->
+size_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>it_max_inner_</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa52011388c8c265ffc71c010a4b61f8f"></a><!-- doxytag: member="Prob::it_max_outer_" ref="aa52011388c8c265ffc71c010a4b61f8f" args="" -->
+size_t&nbsp;</td><td class="memItemRight" valign="bottom"><b>it_max_outer_</b></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Problem </p>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a35e6fe7ad3c45ef3b922f5212a039887"></a><!-- doxytag: member="Prob::solve" ref="a35e6fe7ad3c45ef3b922f5212a039887" args="(std::string name, real cond, bool ver, size_t it_outer, real R_outer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Prob::solve </td>
+          <td>(</td>
+          <td class="paramtype">std::string&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&nbsp;</td>
+          <td class="paramname"> <em>cond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>ver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>it_outer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&nbsp;</td>
+          <td class="paramname"> <em>R_outer</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>solve </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>name of variable to solve </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cond</em>&nbsp;</td><td>residual stop condition </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>it_outer</em>&nbsp;</td><td>current iteration of outer loop for purpose of displaying </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>R_outer</em>&nbsp;</td><td>current residual of outer loop for purpose of displaying </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a19a0a17f9437a24111f11f215695a33e"></a><!-- doxytag: member="Prob::solve_serial" ref="a19a0a17f9437a24111f11f215695a33e" args="(std::string name, real cond, bool ver, size_t it_outer, real R_outer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Prob::solve_serial </td>
+          <td>(</td>
+          <td class="paramtype">std::string&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&nbsp;</td>
+          <td class="paramname"> <em>cond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>ver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>it_outer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real&nbsp;</td>
+          <td class="paramname"> <em>R_outer</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>move this to class variable to avoid excess alloc! </dd></dl>
+</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/include/Diff2D/<a class="el" href="prob_8hpp_source.html">prob.hpp</a></li>
 <li>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/src/Diff2D/prob.cpp</li>
@@ -120,7 +226,7 @@ int&nbsp;</td><td class="memItemRight" valign="bottom"><b>it_max_2_</b></td></tr
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -129,7 +235,7 @@ int&nbsp;</td><td class="memItemRight" valign="bottom"><b>it_max_2_</b></td></tr
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 28 May 2014 for Diff2D by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 29 May 2014 for Diff2D by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
