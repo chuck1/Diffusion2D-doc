@@ -51,8 +51,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p><a href="classPatch__Group-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7585b36431136e14c2d17e84388969be"></a><!-- doxytag: member="Patch_Group::Patch_Group" ref="a7585b36431136e14c2d17e84388969be" args="(Prob_s prob, std::string name, std::map&lt; std::string, real &gt; v_0, std::map&lt; std::string, real &gt; S)" -->
-&nbsp;</td><td class="memItemRight" valign="bottom"><b>Patch_Group</b> (Prob_s prob, std::string name, std::map&lt; std::string, real &gt; v_0, std::map&lt; std::string, real &gt; S)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca3d4f7109706b6db9b0c928649c87a4"></a><!-- doxytag: member="Patch_Group::Patch_Group" ref="aca3d4f7109706b6db9b0c928649c87a4" args="(Prob_s prob, std::string name, std::map&lt; std::string, real &gt; v_0, std::map&lt; std::string, real &gt; S, real v_0_point[2])" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>Patch_Group</b> (Prob_s prob, std::string name, std::map&lt; std::string, real &gt; v_0, std::map&lt; std::string, real &gt; S, real v_0_point[2])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb0f6e18c5833efbe20634c1e4aabe9b"></a><!-- doxytag: member="Patch_Group::create_patch" ref="abb0f6e18c5833efbe20634c1e4aabe9b" args="(std::string name, int normal, std::vector&lt; size_t &gt; indicesx, std::vector&lt; size_t &gt; indicesy, std::vector&lt; size_t &gt; indicesz, patch_v_bou_type v_bou)" -->
 Patch_s&nbsp;</td><td class="memItemRight" valign="bottom"><b>create_patch</b> (std::string name, int normal, std::vector&lt; size_t &gt; indicesx, std::vector&lt; size_t &gt; indicesy, std::vector&lt; size_t &gt; indicesz, patch_v_bou_type v_bou)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada9f56e3be9279ff5d555f2192cfc45b"></a><!-- doxytag: member="Patch_Group::reset_s" ref="ada9f56e3be9279ff5d555f2192cfc45b" args="(std::string equ_name)" -->
@@ -72,6 +72,8 @@ std::string&nbsp;</td><td class="memItemRight" valign="bottom"><b>name_</b></td>
 std::map&lt; std::string, real &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>v_0_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaad946bd88382b1e2e30cd1278632ace"></a><!-- doxytag: member="Patch_Group::S_" ref="aaad946bd88382b1e2e30cd1278632ace" args="" -->
 std::map&lt; std::string, real &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>S_</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec0690749d93e67521293acb28c81fb1"></a><!-- doxytag: member="Patch_Group::v_0_point_" ref="aec0690749d93e67521293acb28c81fb1" args="[2]" -->
+real&nbsp;</td><td class="memItemRight" valign="bottom"><b>v_0_point_</b> [2]</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/include/Diff2D/<a class="el" href="patch__group_8hpp_source.html">patch_group.hpp</a></li>
@@ -83,7 +85,7 @@ std::map&lt; std::string, real &gt;&nbsp;</td><td class="memItemRight" valign="b
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,7 +94,7 @@ std::map&lt; std::string, real &gt;&nbsp;</td><td class="memItemRight" valign="b
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 29 May 2014 for Diff2D by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 31 May 2014 for Diff2D by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
