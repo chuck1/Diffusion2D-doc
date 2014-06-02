@@ -1,0 +1,5 @@
+<map id="boundary" name="boundary">
+<area shape="rect" id="node2" href="$structboundary__array.html" title="boundary_array" alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node3" href="$structboundary__insulated.html" title="boundary_insulated" alt="" coords="140,80,275,107"/>
+<area shape="rect" id="node4" href="$structboundary__single.html" title="boundary_single" alt="" coords="299,80,415,107"/>
+</map>
