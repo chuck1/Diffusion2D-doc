@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -124,6 +124,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::strin
 <tr class="memitem:a5e59eb697dae5a0bdd75085af512c83b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e59eb697dae5a0bdd75085af512c83b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>write_binary</b> (std::string equ_name)</td></tr>
 <tr class="separator:a5e59eb697dae5a0bdd75085af512c83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">value inspection and manipulation</div></td></tr>
+<tr class="memitem:a71f920e68d637daa7b0640475e332610"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71f920e68d637daa7b0640475e332610"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>value_add</b> (std::string const &amp;name, real const &amp;a)</td></tr>
+<tr class="separator:a71f920e68d637daa7b0640475e332610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bd8b492bbf0897a97e4d75da704c9ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bd8b492bbf0897a97e4d75da704c9ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>value_divide</b> (std::string const &amp;name, real const &amp;a)</td></tr>
+<tr class="separator:a7bd8b492bbf0897a97e4d75da704c9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac40fd6ce722469909d6561f755f6de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ac40fd6ce722469909d6561f755f6de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>value_clamp</b> (std::string const &amp;name, real const &amp;a, real const &amp;b)</td></tr>
+<tr class="separator:a0ac40fd6ce722469909d6561f755f6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d99180b4ae46d848fc34b385e06b349"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d99180b4ae46d848fc34b385e06b349"></a>
+real&#160;</td><td class="memItemRight" valign="bottom"><b>min</b> (std::string const &amp;name) const </td></tr>
+<tr class="separator:a1d99180b4ae46d848fc34b385e06b349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef159a2eadb32354ac1bbff72e6674b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef159a2eadb32354ac1bbff72e6674b0"></a>
+real&#160;</td><td class="memItemRight" valign="bottom"><b>max</b> (std::string const &amp;name) const </td></tr>
+<tr class="separator:aef159a2eadb32354ac1bbff72e6674b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -153,7 +169,7 @@ std::map&lt; std::string, real &gt;&#160;</td><td class="memItemRight" valign="b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 1 2014 11:17:45 for Diff2D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 4 2014 16:13:03 for Diff2D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

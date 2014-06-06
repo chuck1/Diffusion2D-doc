@@ -40,31 +40,7 @@ Collaboration diagram for Prob\+:\nopagebreak
 \hypertarget{classProb_abb05f9a8629633d7509ec035128c3012}{Patch\+\_\+\+Group\+\_\+s {\bfseries create\+\_\+patch\+\_\+group} (std\+::string name, std\+::map$<$ std\+::string, real $>$ v\+\_\+0, std\+::map$<$ std\+::string, real $>$ S, \hyperlink{structpoint}{point} v\+\_\+0\+\_\+point)}\label{classProb_abb05f9a8629633d7509ec035128c3012}
 
 \item 
-\hypertarget{classProb_a70dca1f3332e57f72b834ba91d52ca31}{real {\bfseries temp\+\_\+max} (std\+::string equ\+\_\+name)}\label{classProb_a70dca1f3332e57f72b834ba91d52ca31}
-
-\item 
-\hypertarget{classProb_ac1bce1f293f1ec1c251730db1a1d0313}{real {\bfseries temp\+\_\+min} (std\+::string equ\+\_\+name)}\label{classProb_ac1bce1f293f1ec1c251730db1a1d0313}
-
-\item 
-\hypertarget{classProb_a9fff19c6e6676c72153dc0ed32b1e6a9}{real {\bfseries grad\+\_\+max} (std\+::string equ\+\_\+name)}\label{classProb_a9fff19c6e6676c72153dc0ed32b1e6a9}
-
-\item 
-\hypertarget{classProb_a6dc764bdb12b430c1a28d73925f6c6d8}{real {\bfseries grad\+\_\+min} (std\+::string equ\+\_\+name)}\label{classProb_a6dc764bdb12b430c1a28d73925f6c6d8}
-
-\item 
-\hypertarget{classProb_aa5c8f3a5c0e9a15e054ca37d150a8921}{void {\bfseries value\+\_\+add} (std\+::string equ\+\_\+name, real v)}\label{classProb_aa5c8f3a5c0e9a15e054ca37d150a8921}
-
-\item 
-\hypertarget{classProb_a8dd6bf7649956711e74ccc58957186d8}{void {\bfseries value\+\_\+add} (std\+::string equ\+\_\+name, array$<$ real, 2 $>$ v)}\label{classProb_a8dd6bf7649956711e74ccc58957186d8}
-
-\item 
-\hypertarget{classProb_ad0c1ce9a1ffc181bf289aed404a2bb45}{void {\bfseries value\+\_\+normalize} (std\+::string equ\+\_\+name)}\label{classProb_ad0c1ce9a1ffc181bf289aed404a2bb45}
-
-\item 
-\hypertarget{classProb_a7bb25a9a766484c678d7e23e4b5ea4a7}{void {\bfseries copy\+\_\+value\+\_\+to\+\_\+source} (std\+::string equ\+\_\+name\+\_\+from, std\+::string equ\+\_\+name\+\_\+to)}\label{classProb_a7bb25a9a766484c678d7e23e4b5ea4a7}
-
-\item 
-\hypertarget{classProb_ac298114d98ebe5296ede77dafc3f4df3}{std\+::vector$<$ Face\+\_\+s $>$ {\bfseries faces} ()}\label{classProb_ac298114d98ebe5296ede77dafc3f4df3}
+\hypertarget{classProb_a30084f3c079cf517bdffdad065eee5dc}{std\+::vector$<$ Face\+\_\+s $>$ {\bfseries faces} () const }\label{classProb_a30084f3c079cf517bdffdad065eee5dc}
 
 \item 
 int \hyperlink{classProb_ad4de9e5a4bf13c03e2ba243b884b75d7}{solve} (std\+::string name, real cond, size\+\_\+t it\+\_\+outer, real R\+\_\+outer)
@@ -82,6 +58,37 @@ int \hyperlink{classProb_a3d2e422acfd8bf712d7fca87c5bc04ca}{solve2} (std\+::stri
 \hypertarget{classProb_a06e9e4b07d84c253b313b6d490776353}{void {\bfseries write\+\_\+binary} (std\+::string equ\+\_\+name)}\label{classProb_a06e9e4b07d84c253b313b6d490776353}
 
 \end{DoxyCompactItemize}
+\begin{Indent}{\bf value inspection and manipulation}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classProb_a070c8fd90e9380ce16bcbd71843dee87}{real {\bfseries max} (std\+::string const \&equ\+\_\+name) const }\label{classProb_a070c8fd90e9380ce16bcbd71843dee87}
+
+\item 
+\hypertarget{classProb_a7cd3cf3838b2f434db946420dddef4c3}{real {\bfseries min} (std\+::string const \&equ\+\_\+name) const }\label{classProb_a7cd3cf3838b2f434db946420dddef4c3}
+
+\item 
+\hypertarget{classProb_a081a8b2a0890f3756e77d2b641910a84}{real {\bfseries grad\+\_\+max} (std\+::string const \&equ\+\_\+name) const }\label{classProb_a081a8b2a0890f3756e77d2b641910a84}
+
+\item 
+\hypertarget{classProb_ad19b211a5a372a8f43e56897bf7ca9d3}{real {\bfseries grad\+\_\+min} (std\+::string const \&equ\+\_\+name) const }\label{classProb_ad19b211a5a372a8f43e56897bf7ca9d3}
+
+\item 
+\hypertarget{classProb_ae640aa1c7afdc30de6b49b576673c4cc}{void {\bfseries value\+\_\+add} (std\+::string const \&equ\+\_\+name, real const \&v)}\label{classProb_ae640aa1c7afdc30de6b49b576673c4cc}
+
+\item 
+\hypertarget{classProb_ace52b307acd315c5243f3aa676f2d550}{void {\bfseries value\+\_\+add} (std\+::string const \&equ\+\_\+name, array$<$ real, 2 $>$ const \&v)}\label{classProb_ace52b307acd315c5243f3aa676f2d550}
+
+\item 
+\hypertarget{classProb_a12688abbc76b07d448b2ed25d0b439a6}{void {\bfseries value\+\_\+normalize} (std\+::string const \&equ\+\_\+name)}\label{classProb_a12688abbc76b07d448b2ed25d0b439a6}
+
+\item 
+\hypertarget{classProb_a4fd63fbff17359e851c4078d82b6449a}{void {\bfseries value\+\_\+clamp\+\_\+per\+\_\+group} (std\+::string const \&name, real a, real const \&b)}\label{classProb_a4fd63fbff17359e851c4078d82b6449a}
+
+\item 
+\hypertarget{classProb_a7bb25a9a766484c678d7e23e4b5ea4a7}{void {\bfseries copy\+\_\+value\+\_\+to\+\_\+source} (std\+::string equ\+\_\+name\+\_\+from, std\+::string equ\+\_\+name\+\_\+to)}\label{classProb_a7bb25a9a766484c678d7e23e4b5ea4a7}
+
+\end{DoxyCompactItemize}
+\end{Indent}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 

@@ -36,6 +36,10 @@
     <filename>classConn.html</filename>
   </compound>
   <compound kind="struct">
+    <name>conns_not_zero</name>
+    <filename>structconns__not__zero.html</filename>
+  </compound>
+  <compound kind="struct">
     <name>EdgeError</name>
     <filename>structEdgeError.html</filename>
   </compound>
@@ -51,6 +55,10 @@
     <name>Face</name>
     <filename>classFace.html</filename>
     <base>LocalCoor</base>
+  </compound>
+  <compound kind="struct">
+    <name>grid_return_type</name>
+    <filename>structgrid__return__type.html</filename>
   </compound>
   <compound kind="struct">
     <name>Index_Lambda</name>
@@ -115,10 +123,10 @@
     <filename>structTerm.html</filename>
   </compound>
   <compound kind="dir">
-    <name>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/build</name>
-    <path>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/build/</path>
-    <filename>dir_4fef79e7177ba769987a8da36c892c5f.html</filename>
-    <dir>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/build/include</dir>
+    <name>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/Debug</name>
+    <path>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/Debug/</path>
+    <filename>dir_faa8bedbcbaa373d57b77d9219afda20.html</filename>
+    <dir>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/Debug/include</dir>
   </compound>
   <compound kind="dir">
     <name>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/src/Diff2D</name>
@@ -158,9 +166,9 @@
     <file>util.hpp</file>
   </compound>
   <compound kind="dir">
-    <name>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/build/include/Diff2D</name>
-    <path>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/build/include/Diff2D/</path>
-    <filename>dir_789fc06f0f1d63346661d32d098702da.html</filename>
+    <name>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/Debug/include/Diff2D</name>
+    <path>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/Debug/include/Diff2D/</path>
+    <filename>dir_6865bb2111776839101da37c973e8a27.html</filename>
     <file>config.hpp</file>
   </compound>
   <compound kind="dir">
@@ -170,10 +178,10 @@
     <dir>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/include/Diff2D</dir>
   </compound>
   <compound kind="dir">
-    <name>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/build/include</name>
-    <path>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/build/include/</path>
-    <filename>dir_8f2980731aba7ec7b9fcae5764f196e3.html</filename>
-    <dir>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/build/include/Diff2D</dir>
+    <name>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/Debug/include</name>
+    <path>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/Debug/include/</path>
+    <filename>dir_5af164fc8851ec2c1ca482ca6a9e3297.html</filename>
+    <dir>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/Debug/include/Diff2D</dir>
   </compound>
   <compound kind="dir">
     <name>/nfs/stak/students/r/rymalc/Documents/Programming/C++/Diffusion2D/src</name>

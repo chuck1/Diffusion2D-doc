@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,33 +118,9 @@ Equation_Prob_s&#160;</td><td class="memItemRight" valign="bottom"><b>create_equ
 <tr class="memitem:abb05f9a8629633d7509ec035128c3012"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb05f9a8629633d7509ec035128c3012"></a>
 Patch_Group_s&#160;</td><td class="memItemRight" valign="bottom"><b>create_patch_group</b> (std::string name, std::map&lt; std::string, real &gt; v_0, std::map&lt; std::string, real &gt; S, <a class="el" href="structpoint.html">point</a> v_0_point)</td></tr>
 <tr class="separator:abb05f9a8629633d7509ec035128c3012"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70dca1f3332e57f72b834ba91d52ca31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70dca1f3332e57f72b834ba91d52ca31"></a>
-real&#160;</td><td class="memItemRight" valign="bottom"><b>temp_max</b> (std::string equ_name)</td></tr>
-<tr class="separator:a70dca1f3332e57f72b834ba91d52ca31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1bce1f293f1ec1c251730db1a1d0313"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1bce1f293f1ec1c251730db1a1d0313"></a>
-real&#160;</td><td class="memItemRight" valign="bottom"><b>temp_min</b> (std::string equ_name)</td></tr>
-<tr class="separator:ac1bce1f293f1ec1c251730db1a1d0313"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fff19c6e6676c72153dc0ed32b1e6a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fff19c6e6676c72153dc0ed32b1e6a9"></a>
-real&#160;</td><td class="memItemRight" valign="bottom"><b>grad_max</b> (std::string equ_name)</td></tr>
-<tr class="separator:a9fff19c6e6676c72153dc0ed32b1e6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dc764bdb12b430c1a28d73925f6c6d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dc764bdb12b430c1a28d73925f6c6d8"></a>
-real&#160;</td><td class="memItemRight" valign="bottom"><b>grad_min</b> (std::string equ_name)</td></tr>
-<tr class="separator:a6dc764bdb12b430c1a28d73925f6c6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5c8f3a5c0e9a15e054ca37d150a8921"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5c8f3a5c0e9a15e054ca37d150a8921"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>value_add</b> (std::string equ_name, real v)</td></tr>
-<tr class="separator:aa5c8f3a5c0e9a15e054ca37d150a8921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dd6bf7649956711e74ccc58957186d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8dd6bf7649956711e74ccc58957186d8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>value_add</b> (std::string equ_name, array&lt; real, 2 &gt; v)</td></tr>
-<tr class="separator:a8dd6bf7649956711e74ccc58957186d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0c1ce9a1ffc181bf289aed404a2bb45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0c1ce9a1ffc181bf289aed404a2bb45"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>value_normalize</b> (std::string equ_name)</td></tr>
-<tr class="separator:ad0c1ce9a1ffc181bf289aed404a2bb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bb25a9a766484c678d7e23e4b5ea4a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bb25a9a766484c678d7e23e4b5ea4a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>copy_value_to_source</b> (std::string equ_name_from, std::string equ_name_to)</td></tr>
-<tr class="separator:a7bb25a9a766484c678d7e23e4b5ea4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac298114d98ebe5296ede77dafc3f4df3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac298114d98ebe5296ede77dafc3f4df3"></a>
-std::vector&lt; Face_s &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>faces</b> ()</td></tr>
-<tr class="separator:ac298114d98ebe5296ede77dafc3f4df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30084f3c079cf517bdffdad065eee5dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30084f3c079cf517bdffdad065eee5dc"></a>
+std::vector&lt; Face_s &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>faces</b> () const </td></tr>
+<tr class="separator:a30084f3c079cf517bdffdad065eee5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4de9e5a4bf13c03e2ba243b884b75d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProb.html#ad4de9e5a4bf13c03e2ba243b884b75d7">solve</a> (std::string name, real cond, size_t it_outer, real R_outer)</td></tr>
 <tr class="memdesc:ad4de9e5a4bf13c03e2ba243b884b75d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">solve  <a href="#ad4de9e5a4bf13c03e2ba243b884b75d7">More...</a><br /></td></tr>
 <tr class="separator:ad4de9e5a4bf13c03e2ba243b884b75d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +138,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::strin
 <tr class="memitem:a06e9e4b07d84c253b313b6d490776353"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06e9e4b07d84c253b313b6d490776353"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>write_binary</b> (std::string equ_name)</td></tr>
 <tr class="separator:a06e9e4b07d84c253b313b6d490776353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">value inspection and manipulation</div></td></tr>
+<tr class="memitem:a070c8fd90e9380ce16bcbd71843dee87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a070c8fd90e9380ce16bcbd71843dee87"></a>
+real&#160;</td><td class="memItemRight" valign="bottom"><b>max</b> (std::string const &amp;equ_name) const </td></tr>
+<tr class="separator:a070c8fd90e9380ce16bcbd71843dee87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd3cf3838b2f434db946420dddef4c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cd3cf3838b2f434db946420dddef4c3"></a>
+real&#160;</td><td class="memItemRight" valign="bottom"><b>min</b> (std::string const &amp;equ_name) const </td></tr>
+<tr class="separator:a7cd3cf3838b2f434db946420dddef4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081a8b2a0890f3756e77d2b641910a84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a081a8b2a0890f3756e77d2b641910a84"></a>
+real&#160;</td><td class="memItemRight" valign="bottom"><b>grad_max</b> (std::string const &amp;equ_name) const </td></tr>
+<tr class="separator:a081a8b2a0890f3756e77d2b641910a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad19b211a5a372a8f43e56897bf7ca9d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad19b211a5a372a8f43e56897bf7ca9d3"></a>
+real&#160;</td><td class="memItemRight" valign="bottom"><b>grad_min</b> (std::string const &amp;equ_name) const </td></tr>
+<tr class="separator:ad19b211a5a372a8f43e56897bf7ca9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae640aa1c7afdc30de6b49b576673c4cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae640aa1c7afdc30de6b49b576673c4cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>value_add</b> (std::string const &amp;equ_name, real const &amp;v)</td></tr>
+<tr class="separator:ae640aa1c7afdc30de6b49b576673c4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace52b307acd315c5243f3aa676f2d550"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace52b307acd315c5243f3aa676f2d550"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>value_add</b> (std::string const &amp;equ_name, array&lt; real, 2 &gt; const &amp;v)</td></tr>
+<tr class="separator:ace52b307acd315c5243f3aa676f2d550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12688abbc76b07d448b2ed25d0b439a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12688abbc76b07d448b2ed25d0b439a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>value_normalize</b> (std::string const &amp;equ_name)</td></tr>
+<tr class="separator:a12688abbc76b07d448b2ed25d0b439a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd63fbff17359e851c4078d82b6449a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fd63fbff17359e851c4078d82b6449a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>value_clamp_per_group</b> (std::string const &amp;name, real a, real const &amp;b)</td></tr>
+<tr class="separator:a4fd63fbff17359e851c4078d82b6449a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb25a9a766484c678d7e23e4b5ea4a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bb25a9a766484c678d7e23e4b5ea4a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>copy_value_to_source</b> (std::string equ_name_from, std::string equ_name_to)</td></tr>
+<tr class="separator:a7bb25a9a766484c678d7e23e4b5ea4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -329,7 +333,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>it_max_outer_</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 1 2014 11:17:45 for Diff2D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 4 2014 16:13:03 for Diff2D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
